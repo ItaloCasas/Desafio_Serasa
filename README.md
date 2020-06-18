@@ -15,3 +15,6 @@ Configurar ambiente para testes:
 - Inicializar o XAMPP;
 - Abrir o Google Chrome, ativar a extensão "Moessif Origins & CORS Changer";
 - Abrir o prompt de comando e encaminhar para dentro da pasta frontend, executar o comando "ionic cordova run browser";
+
+
+Os fontes relevantes estao dentro do .rar, nas pastas frontend/src e backend/serasa;
