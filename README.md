@@ -18,3 +18,26 @@ Configurar ambiente para testes:
 
 
 Os fontes relevantes estao dentro do .rar, nas pastas frontend/src e backend/serasa;
+
+
+Scripts de MySQL necessarios:
+CREATE DATABASE `db_serasa`;
+CREATE TABLE empresa (
+	id INTEGER PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(255)
+);
+
+CREATE TABLE nota (
+	id INTEGER PRIMARY KEY AUTO_INCREMENT,
+	descricao VARCHAR(255),
+	empresa INTEGER NOT NULL,
+	FOREIGN KEY (empresa) REFERENCES empresa(id)
+);
+
+INSERT INTO empresa (nome) VALUES ('Empresa 1');
+INSERT INTO empresa (nome) VALUES ('Empresa 2');
+INSERT INTO empresa (nome) VALUES ('Empresa 3');
+INSERT INTO empresa (nome) VALUES ('Empresa 4');
+INSERT INTO empresa (nome) VALUES ('Empresa 5');
+
+Arquivo de modelo para upload de notas esta no repositorio.
